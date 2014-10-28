@@ -1,4 +1,4 @@
-module.exports = function roleInit(server) {
+module.exports = function levelInit(server) {
   var Level = server.models.Level;
 
   //insert row on model RoleMapping
