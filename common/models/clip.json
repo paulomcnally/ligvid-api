@@ -51,7 +51,18 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "Level": {
+      "type": "belongsTo",
+      "model": "Level",
+      "foreignKey": "level_id"
+    },
+    "User": {
+      "type": "belongsTo",
+      "model": "User",
+      "foreignKey": "user_id"
+    }
+  },
   "acls": [],
   "methods": []
 }
