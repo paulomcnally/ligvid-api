@@ -1,0 +1,10 @@
+{
+  "ligvid": {
+    "host": "localhost",
+    "database": "ligvid",
+    "username": "postgres",
+    "password": "NodeRules",
+    "name": "ligvid",
+    "connector": "postgresql"
+  }
+}

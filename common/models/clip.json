@@ -1,0 +1,94 @@
+{
+  "name": "Clip",
+  "plural": "Clips",
+  "base": "PersistedModel",
+  "properties": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "length": 200
+    },
+    "description": {
+      "type": "string",
+      "required": true,
+      "length": 500
+    },
+    "duration": {
+      "type": "string",
+      "required": true,
+      "length": 8
+    },
+    "released": {
+      "type": "date",
+      "required": true
+    },
+    "rating": {
+      "type": "number",
+      "required": true
+    },
+    "image": {
+      "type": "string",
+      "required": true,
+      "length": 30
+    },
+    "url": {
+      "type": "string",
+      "required": true,
+      "length": 200
+    },
+    "repository": {
+      "type": "string",
+      "required": true,
+      "length": 200
+    },
+    "level_id": {
+      "type": "number",
+      "required": true
+    },
+    "user_id": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "Level": {
+      "type": "belongsTo",
+      "model": "Level",
+      "foreignKey": "level_id"
+    },
+    "User": {
+      "type": "belongsTo",
+      "model": "User",
+      "foreignKey": "user_id"
+    },
+    "Tags": {
+      "type": "hasMany",
+      "model": "Tag",
+      "through": "ClipTag",
+      "foreignKey": "tag_id"
+    }
+  },
+  "acls": [
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "DENY"
+    },
+    {
+      "accessType": "READ",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "ALLOW"
+    },
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "admin",
+      "permission": "ALLOW",
+      "property": "*"
+    }
+  ],
+  "methods": []
+}

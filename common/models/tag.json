@@ -1,0 +1,47 @@
+{
+  "name": "Tag",
+  "plural": "Tags",
+  "base": "PersistedModel",
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "length": 80
+    },
+    "slug": {
+      "type": "string",
+      "length": 100
+    }
+  },
+  "validations": [],
+  "relations": {
+    "Clips": {
+      "type": "hasMany",
+      "model": "Clip",
+      "through": "ClipTag",
+      "foreignKey": "clip_id"
+    }
+  },
+  "acls": [
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "DENY"
+    },
+    {
+      "accessType": "READ",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "ALLOW"
+    },
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "admin",
+      "permission": "ALLOW",
+      "property": "*"
+    }
+  ],
+  "methods": []
+}

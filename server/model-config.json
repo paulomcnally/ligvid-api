@@ -1,0 +1,43 @@
+{
+  "_meta": {
+    "sources": [
+      "../common/models",
+      "./models"
+    ]
+  },
+  "User": {
+    "dataSource": "ligvid"
+  },
+  "AccessToken": {
+    "dataSource": "ligvid",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "ligvid",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "ligvid",
+    "public": false
+  },
+  "Role": {
+    "dataSource": "ligvid",
+    "public": false
+  },
+  "Clip": {
+    "dataSource": "ligvid",
+    "public": true
+  },
+  "Level": {
+    "dataSource": "ligvid",
+    "public": true
+  },
+  "Tag": {
+    "dataSource": "ligvid",
+    "public": true
+  },
+  "ClipTag": {
+    "dataSource": "ligvid",
+    "public": true
+  }
+}
