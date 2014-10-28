@@ -1,0 +1,19 @@
+{
+  "name": "ClipTag",
+  "plural": "ClipTags",
+  "base": "PersistedModel",
+  "properties": {
+    "clip_id": {
+      "type": "number",
+      "required": true
+    },
+    "tag_id": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": []
+}
