@@ -35,5 +35,9 @@
   "Tag": {
     "dataSource": "ligvid",
     "public": true
+  },
+  "ClipTag": {
+    "dataSource": "ligvid",
+    "public": true
   }
 }
