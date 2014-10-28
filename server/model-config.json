@@ -31,5 +31,9 @@
   "Level": {
     "dataSource": "ligvid",
     "public": true
+  },
+  "Tag": {
+    "dataSource": "ligvid",
+    "public": true
   }
 }
