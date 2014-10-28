@@ -1,29 +1,31 @@
 module.exports = function levelInit(server) {
-  var Level = server.models.Level;
+  if (!process.env.LOOPBACK_AUTO) {
+    var Level = server.models.Level;
 
-  //insert row on model RoleMapping
-  function addLevel(name) {
-    Level.findOne({
-      where: {
-        'name': name
-      }
-    }, function(err, res) {
-      if (res === null) {
-        Level.create({
-          name: name
-        }, function(err, level) {
-          if (err) {
-            console.log(err);
-          }
-          else {
-            console.log('✓ Level ' + level.name + ' created!');
-          }
-        });
-      }
-    });
+    //insert row on model RoleMapping
+    function addLevel(name) {
+      Level.findOne({
+        where: {
+          'name': name
+        }
+      }, function(err, res) {
+        if (res === null) {
+          Level.create({
+            name: name
+          }, function(err, level) {
+            if (err) {
+              console.log(err);
+            }
+            else {
+              console.log('✓ Level ' + level.name + ' created!');
+            }
+          });
+        }
+      });
+    }
+
+    addLevel('Principiante');
+    addLevel('Intermedio');
+    addLevel('avanzado');
   }
-
-  addLevel('Principiante');
-  addLevel('Intermedio');
-  addLevel('avanzado');
 };
