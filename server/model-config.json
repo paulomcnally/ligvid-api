@@ -6,22 +6,22 @@
     ]
   },
   "User": {
-    "dataSource": "db"
+    "dataSource": "ligvid"
   },
   "AccessToken": {
-    "dataSource": "db",
+    "dataSource": "ligvid",
     "public": false
   },
   "ACL": {
-    "dataSource": "db",
+    "dataSource": "ligvid",
     "public": false
   },
   "RoleMapping": {
-    "dataSource": "db",
+    "dataSource": "ligvid",
     "public": false
   },
   "Role": {
-    "dataSource": "db",
+    "dataSource": "ligvid",
     "public": false
   }
 }
