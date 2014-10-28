@@ -23,5 +23,9 @@
   "Role": {
     "dataSource": "ligvid",
     "public": false
+  },
+  "Clip": {
+    "dataSource": "ligvid",
+    "public": true
   }
 }

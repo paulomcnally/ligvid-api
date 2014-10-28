@@ -1,0 +1,57 @@
+{
+  "name": "Clip",
+  "plural": "Clips",
+  "base": "PersistedModel",
+  "properties": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "length": 200
+    },
+    "description": {
+      "type": "string",
+      "required": true,
+      "length": 500
+    },
+    "duration": {
+      "type": "string",
+      "required": true,
+      "length": 8
+    },
+    "released": {
+      "type": "date",
+      "required": true
+    },
+    "rating": {
+      "type": "number",
+      "required": true
+    },
+    "image": {
+      "type": "string",
+      "required": true,
+      "length": 30
+    },
+    "url": {
+      "type": "string",
+      "required": true,
+      "length": 200
+    },
+    "repository": {
+      "type": "string",
+      "required": true,
+      "length": 200
+    },
+    "level_id": {
+      "type": "number",
+      "required": true
+    },
+    "user_id": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": []
+}
