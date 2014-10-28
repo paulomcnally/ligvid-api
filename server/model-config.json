@@ -27,5 +27,9 @@
   "Clip": {
     "dataSource": "ligvid",
     "public": true
+  },
+  "Level": {
+    "dataSource": "ligvid",
+    "public": true
   }
 }
