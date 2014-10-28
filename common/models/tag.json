@@ -14,7 +14,14 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "Clips": {
+      "type": "hasMany",
+      "model": "Clip",
+      "through": "ClipTag",
+      "foreignKey": "clip_id"
+    }
+  },
   "acls": [],
   "methods": []
 }

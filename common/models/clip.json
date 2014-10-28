@@ -61,6 +61,12 @@
       "type": "belongsTo",
       "model": "User",
       "foreignKey": "user_id"
+    },
+    "Tags": {
+      "type": "hasMany",
+      "model": "Tag",
+      "through": "ClipTag",
+      "foreignKey": "tag_id"
     }
   },
   "acls": [],
