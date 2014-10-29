@@ -13,7 +13,18 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "Subscription": {
+      "type": "belongsTo",
+      "model": "Subscription",
+      "foreignKey": "subscription_id"
+    },
+    "User": {
+      "type": "belongsTo",
+      "model": "User",
+      "foreignKey": "user_id"
+    }
+  },
   "acls": [
     {
       "accessType": "*",
