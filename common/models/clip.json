@@ -71,6 +71,11 @@
       "model": "Tag",
       "foreignKey": "tag_id",
       "through": "ClipTag"
+    },
+    "Status": {
+      "type": "belongsTo",
+      "model": "Status",
+      "foreignKey": "status_id"
     }
   },
   "acls": [
