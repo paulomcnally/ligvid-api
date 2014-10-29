@@ -23,7 +23,13 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "Status": {
+      "type": "belongsTo",
+      "model": "Status",
+      "foreignKey": "status_id"
+    }
+  },
   "acls": [],
   "methods": []
 }
