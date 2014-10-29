@@ -1,0 +1,19 @@
+{
+  "name": "Account",
+  "plural": "Accounts",
+  "base": "PersistedModel",
+  "properties": {
+    "subscription_id": {
+      "type": "number",
+      "required": true
+    },
+    "user_id": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": []
+}
