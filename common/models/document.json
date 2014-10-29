@@ -32,6 +32,11 @@
       "type": "belongsTo",
       "model": "Status",
       "foreignKey": "status_id"
+    },
+    "User": {
+      "type": "belongsTo",
+      "model": "User",
+      "foreignKey": "user_id"
     }
   },
   "acls": [
