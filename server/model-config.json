@@ -47,5 +47,9 @@
   "Status": {
     "dataSource": "ligvid",
     "public": true
+  },
+  "Account": {
+    "dataSource": "ligvid",
+    "public": true
   }
 }
