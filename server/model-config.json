@@ -43,5 +43,9 @@
   "Document": {
     "dataSource": "ligvid",
     "public": true
+  },
+  "Status": {
+    "dataSource": "ligvid",
+    "public": true
   }
 }
