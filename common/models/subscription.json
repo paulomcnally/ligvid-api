@@ -1,0 +1,15 @@
+{
+  "name": "Subscription",
+  "plural": "Subscriptions",
+  "base": "PersistedModel",
+  "properties": {
+    "subscription_type_id": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": []
+}

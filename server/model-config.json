@@ -51,5 +51,9 @@
   "Account": {
     "dataSource": "ligvid",
     "public": true
+  },
+  "Subscription": {
+    "dataSource": "ligvid",
+    "public": true
   }
 }
