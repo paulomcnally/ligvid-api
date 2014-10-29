@@ -15,6 +15,10 @@
       "type": "number",
       "required": true
     },
+    "user_id": {
+      "type": "number",
+      "required": true
+    },
     "created_at": {
       "type": "date"
     },
