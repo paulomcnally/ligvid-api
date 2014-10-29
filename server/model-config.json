@@ -55,5 +55,9 @@
   "Subscription": {
     "dataSource": "ligvid",
     "public": true
+  },
+  "SubscriptionType": {
+    "dataSource": "ligvid",
+    "public": true
   }
 }
