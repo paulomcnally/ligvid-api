@@ -65,8 +65,8 @@
     "Tags": {
       "type": "hasMany",
       "model": "Tag",
-      "through": "ClipTag",
-      "foreignKey": "tag_id"
+      "foreignKey": "tag_id",
+      "through": "ClipTag"
     }
   },
   "acls": [
