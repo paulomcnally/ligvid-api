@@ -18,8 +18,8 @@
     "Clips": {
       "type": "hasMany",
       "model": "Clip",
-      "through": "ClipTag",
-      "foreignKey": "clip_id"
+      "foreignKey": "clip_id",
+      "through": "ClipTag"
     }
   },
   "acls": [
