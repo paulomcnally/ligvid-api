@@ -1,0 +1,45 @@
+{
+  "name": "Course",
+  "plural": "Courses",
+  "base": "PersistedModel",
+  "properties": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "length": 200
+    },
+    "short_description": {
+      "type": "string",
+      "required": true,
+      "length": 200
+    },
+    "description": {
+      "type": "string",
+      "required": true
+    },
+    "image": {
+      "type": "string",
+      "required": true,
+      "length": 30
+    },
+    "price": {
+      "type": "number",
+      "required": true,
+      "length": 30
+    },
+    "user_id": {
+      "type": "number",
+      "required": true
+    },
+    "created_at": {
+      "type": "date"
+    },
+    "updated_at": {
+      "type": "date"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": []
+}
